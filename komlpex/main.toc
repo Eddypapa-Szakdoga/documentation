@@ -1,0 +1,10 @@
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Bevezet\IeC {\'e}s}{2}{chapter.2}
+\select@language {magyar} \contentsline {section}{\numberline {1.1}Motiv\IeC {\'a}ci\IeC {\'o}}{3}{section.3}
+\select@language {magyar} \contentsline {paragraph}{}{4}{section*.4}
+\select@language {magyar} \contentsline {section}{\numberline {1.2}C\IeC {\'e}lkit\IeC {\H u}z\IeC {\'e}s}{4}{section.5}
+\select@language {magyar} \contentsline {paragraph}{}{5}{section*.6}
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Technol\IeC {\'o}gi\IeC {\'a}k}{6}{chapter.7}
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Tervez\IeC {\'e}s}{7}{chapter.8}
+\select@language {magyar} \contentsline {chapter}{\numberline {4}Implement\IeC {\'a}ci\IeC {\'o}}{8}{chapter.9}
+\select@language {magyar} \contentsline {chapter}{\numberline {5}Tesztel\IeC {\'e}s}{9}{chapter.10}
+\select@language {magyar} \contentsline {chapter}{\numberline {6}\IeC {\"O}sszefoglal\IeC {\'a}s}{10}{chapter.11}
