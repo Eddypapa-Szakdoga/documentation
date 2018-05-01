@@ -1,0 +1,5 @@
+Jenkins cikk
+
+Mi a jenkins, miert jo
+Hogyan hasznalhatjuk (otthon is iparban is)
+Pelda infra bemutatasa
