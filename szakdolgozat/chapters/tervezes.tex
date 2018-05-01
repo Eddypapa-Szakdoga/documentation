@@ -1,0 +1,55 @@
+\chapter{Tervezés}
+\label{chapTerveres}
+
+Lemásolni a miskolci cégek jelenleg használt technológiák fejlesztési környezetek labor környezetben való kiépítése.
+
+\section{Honnan hova jutunk}
+
+Az eredetei állapot alapjait amelyet a \ref{fig:jelenallapot} ábrán láthatunk, teljesen megtartásra kerülnének. 
+Ez a GutHub mint verziókövető rendszer és a Maven mint tesztelésre használt program. 
+Minden szempontot figyelembe véve a \ref{fig:jovoallapot} ábrán látható rendszer megvalósítása a 
+
+\section{Hogyan?}
+
+
+\section{Formális leírás}
+
+Táblázat
+milyen gép, gépek igényei és elérhetőségei
+
+migrálható komponensek
+
+\section{Lépések (logikailag)}
+
+\subsection{Szerverek}
+A rendszer megépítésekor már meglévő eszközök megtartásra kerülnek. 
+Ezért az első feladat a Safranek virtuális szervergép frissítése és a szükséges függőségek telepítése. 
+Ezen felül mivel a Jenkinst egy Tomcat fogja futtatni, ezért a Tomcat legújabb verziójának a telepítését kell megoldanunk. 
+
+
+---JENKINS SZERVER---
+
+---JENKINS SZERVER ÉS A SLAVEK---
+
+---JENKINS SZERVER ÉS A GITHUB---
+
+---GITHUB ÉS A FEJELSZTŐK---
+
+---JENKINS SZERVER ÉS A NEXUS SZERVER---
+
+---NEXUS SZERVER ÉS A FEJLESZTŐK---
+
+---EGYBE A MŰKÖSÉS---
+
+
+---JENKINS SZERVER---
+
+A fő Jenkins szervernek nincs nagy erőforrás igénye, viszont nagy tárhelykapacitással kell rendelkeznie és könnyen elérhetőnek kell lennie. Ezért a tanszéken meglévő safranek nevű virtuális szerverre esett a választásom mivel ez a szerver nem csak a belsőhálózatból elérhető és dinamikusan növelhető tárhely kapacitással rendelkezik. Ennek a szervernek lényegében csak egy TomCat-ot és magát a Jenkins kell futtatnia számítások elvégzése nélkűl.
+
+---JENKINS SZERVER ÉS A SLAVEK---
+
+Fontos volt a projekt megvalósítása során, hogy a rendszer könnyen bővíthető legyen és több platformra is képes legyen buildeli és tesztelni. Ezért Master-Slave rendszerel terveztem megvalósítani a Jenkins CI-t. Ugyanis egy Jenkns Master szerver is képes több platformara tesztelni és buildelni, ha legalább egy Slave szerveren megtalálhatóak az adott platformhoz szükséges csomagok és függőségek. Első sorban azokat az igényeket kellett felmérni a jelenlegi és jövőbeli feladatok problémamentes kiszolgálása érdekében az indulásnál már meg kell lenniük---LEHET EZ IS HÜLYESÉG---.
+
+---JENKINS SZERVER ÉS A GITHUB---
+
+A következő lényeges feladat az automatikus GitHub pull-olás beállítása volt. Itt a lehető legnagyobb biztonság elérése és az automatizáltság miatt ssh kulcsos azonosítást szerettem volna megvalósítani. Így a fejlesztőknek a kódoláson kívül csak a GitHub-ra való szinkronizálás lenne a feladatuk.

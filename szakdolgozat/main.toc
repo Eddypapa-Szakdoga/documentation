@@ -1,0 +1,38 @@
+\select@language {magyar} \contentsline {chapter}{Declaration of Authorship}{1}{section*.1}
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Bevezet\IeC {\'e}s}{3}{chapter.4}
+\select@language {magyar} \contentsline {section}{\numberline {1.1}Motiv\IeC {\'a}ci\IeC {\'o}}{3}{section.5}
+\select@language {magyar} \contentsline {paragraph}{}{3}{section*.6}
+\select@language {magyar} \contentsline {paragraph}{}{3}{section*.7}
+\select@language {magyar} \contentsline {section}{\numberline {1.2}C\IeC {\'e}lkit\IeC {\H u}z\IeC {\'e}s}{4}{section.8}
+\select@language {magyar} \contentsline {paragraph}{}{4}{section*.9}
+\select@language {magyar} \contentsline {paragraph}{}{5}{section*.11}
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Technol\IeC {\'o}gi\IeC {\'a}k}{6}{chapter.13}
+\select@language {magyar} \contentsline {section}{\numberline {2.1}Elm\IeC {\'e}letei Alapok}{6}{section.14}
+\select@language {magyar} \contentsline {section}{\numberline {2.2}Technol\IeC {\'o}gi\IeC {\'a}k}{6}{section.15}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.1}Maven}{6}{subsection.16}
+\select@language {magyar} \contentsline {paragraph}{}{6}{section*.17}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.2}Java, JUnit}{7}{subsection.18}
+\select@language {magyar} \contentsline {subsubsection}{Java}{7}{section*.19}
+\select@language {magyar} \contentsline {subsubsection}{JUnit}{7}{section*.20}
+\select@language {magyar} \contentsline {paragraph}{}{7}{section*.21}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.3}MySQL}{7}{subsection.22}
+\select@language {magyar} \contentsline {paragraph}{}{8}{section*.23}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.4}Virtualiz\IeC {\'a}ci\IeC {\'o}, H\IeC {\'a}l\IeC {\'o}zat}{8}{subsection.24}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.5}Jenkins}{8}{subsection.25}
+\select@language {magyar} \contentsline {subsubsection}{Folyamatos Integr\IeC {\'a}ci\IeC {\'o}}{8}{section*.26}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.6}Nexus}{8}{subsection.27}
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Tervez\IeC {\'e}s}{9}{chapter.28}
+\select@language {magyar} \contentsline {section}{\numberline {3.1}Honnan hova jutunk}{9}{section.29}
+\select@language {magyar} \contentsline {section}{\numberline {3.2}Hogyan?}{9}{section.30}
+\select@language {magyar} \contentsline {section}{\numberline {3.3}Form\IeC {\'a}lis le\IeC {\'\i }r\IeC {\'a}s}{9}{section.31}
+\select@language {magyar} \contentsline {section}{\numberline {3.4}L\IeC {\'e}p\IeC {\'e}sek (logikailag)}{9}{section.32}
+\select@language {magyar} \contentsline {subsection}{\numberline {3.4.1}Szerverek}{9}{subsection.33}
+\select@language {magyar} \contentsline {chapter}{\numberline {4}Implement\IeC {\'a}ci\IeC {\'o}}{11}{chapter.34}
+\select@language {magyar} \contentsline {section}{\numberline {4.1}Szerverek}{11}{section.35}
+\select@language {magyar} \contentsline {subsubsection}{Safranek}{11}{section*.36}
+\select@language {magyar} \contentsline {paragraph}{}{11}{section*.37}
+\select@language {magyar} \contentsline {paragraph}{}{11}{section*.39}
+\select@language {magyar} \contentsline {paragraph}{}{11}{section*.41}
+\select@language {magyar} \contentsline {subparagraph}{Jenkins}{11}{section*.42}
+\select@language {magyar} \contentsline {chapter}{\numberline {5}Tesztel\IeC {\'e}s}{13}{chapter.43}
+\select@language {magyar} \contentsline {chapter}{\numberline {6}\IeC {\"O}sszefoglal\IeC {\'a}s}{14}{chapter.44}

@@ -1,0 +1,92 @@
+\chapter{Technológiák}
+\label{chapTech}
+
+\section{Elméletei Alapok}
+
+Az új kiépített rendszernek olcsónak és üzembiztosnak kell lennie. Ezért törekszek a projekt alatt minél több Open Source technológiát alkalmazzak. 
+--- KÉRDÉS HOGY MIT KELLENE MÉG IDE ÍRNI ---
+
+\section{Technológiák}
+A projekthez felhasználandó technológiák már mind meglévő és gyakran használt eszközök. 
+Az egész rendszer alapja a Java.
+
+\subsection{Maven}
+\paragraph{}
+Az Apache Maven rövid nevén csak Maven-t szoftverfejlesztés során használjuk a projektek menedzselésére 
+Az Apache Ant utódja, sok tekintetben hasonlít a két szoftver, azonban az Ant lassabb és elavultabb mint a Maven. 
+A Mavennel az építési- és tesztelési folyamatok automatizálhatóak, így a Jenkinsel tökéletesen együtt tud dolgozni. 
+A Maven egy új fogalmat is bevezet, ez az úgynevezett Projekt Objektummodell (angolul: Project Object Modell) röviden a POM. 
+A POM egy XML fájl amely egy építésre kész projektet és annak függőségeit írja le. 
+Ezzel a pom.xml fájllal adjuk meg a Mavennek hogy mit is csináljon a kóddal.
+Előre megadott célokat tartalmaz mint a kód fordítása és csomagolása, azonban itt van lehetősége a fejlesztőknek saját célokat és teszteket létrehozni. 
+
+A Mavent 2002-ben Jason van Zyl készítette el. A projektet az Apache Software Foundation fejleszti, korábban a cégnél a Jakarta Projekt részeként működött. Jelenleg a 3.3.9-es a legfrissebb verziója.
+
+---IDÉZERT---
+A Maven hálózatképes, tehát szükség esetén dinamikusan is le tud tölteni komponenseket. Repository névvel illetik a különböző hosztok fájlrendszereinek azon mappáit, ahol a letölthető komponensek találhatók. A Maven nem csak a repository-kból való letöltést támogatja, hanem a készült szoftvercsomag feltöltését is. Ezzel az automatizálható le- és feltöltési mechanizmussal a Maven de facto szabványt próbál teremteni, de elég lassan fogadja el a Java közösség.
+
+A Maven plugin alapú architektúrája lehetővé teszi tetszőleges parancssorból vezérelhető alkalmazás használatát. Ez elméletileg lehetővé teszi tetszőleges programnyelvekhez való pluginek készítését, de a gyakorlatban minimális mennyiségű nem javás plugin készült.
+---IDÉZERT---
+
+\subsection{Java, JUnit}
+
+\subsubsection{Java}
+---IDÉZERT---
+A Java általános célú, objektumorientált programozási nyelv, amelyet a Sun Microsystems fejlesztett a ’90-es évek elejétől kezdve egészen 2009-ig, amikor a céget felvásárolta az Oracle. 2011-ben a Java 1.7-es verzióját az új tulajdonos gondozásában adták ki.
+
+A Java alkalmazásokat jellemzően bájtkód formátumra alakítják, de közvetlenül natív (gépi) kód is készíthető Java forráskódból. A bájtkód futtatása a Java virtuális géppel történik, ami vagy interpretálja a bájtkódot, vagy natív gépi kódot készít belőle, és azt futtatja az adott operációs rendszeren. Létezik közvetlenül Java bájtkódot futtató hardver is, az úgynevezett Java processzor.
+
+A Java nyelv a szintaxisát főleg a C és a C++ nyelvektől örökölte, viszont sokkal egyszerűbb objektummodellel rendelkezik, mint a C++. A JavaScript szintaxisa és neve hasonló ugyan a Java-éhoz, de a két nyelv nem áll olyan szoros rokonságban, mint azt ezekből a hasonlóságokból gondolhatnánk.
+
+Bár a nyelv neve kezdetben Oak (tölgyfa) volt, (James Gosling, a nyelv atyja nevezte így az irodája előtt növő tölgyfáról), később kiderült, hogy ilyen elnevezésű nyelv már létezik, ezért végül Java néven vált ismertté. A Java szó a Oracle védjegye. Ennélfogva engedélye nélkül nem használható mások által kifejlesztett termékek megjelölésére; még például Java-szerű ... stb. összetételben sem, mert ez a védjegyjogosult jogaiba ütközik.
+---IDÉZERT---
+
+\subsubsection{JUnit}
+---IDÉZERT---
+JUnit egy egységteszt keretrendszer Java programozási nyelvhez. A teszt vezérelt fejlesztés (TDD) szabályai szerint ez annyit tesz, hogy a kód írásával párhuzamosan fejlesztjük a kódot tesztelő osztályokat is (ezek az egység tesztek). Ezeken egységtesztek karbantartására, csoportos futtatására szolgál ez a keretrendszer. A JUnit teszteket gyakran a build folyamat részeként szokták beépíteni. Pl. napi build-ek esetén ezek a tesztek is lefutnak. A release akkor hibátlan, ha az összes teszt hibátlanul lefut.
+
+A JUnit a egységteszt keretrendszerek családjába tartozik, melyet összességében xUnit-nak hívunk, amely eredeztethető a SUnitból.
+
+JUnit keretrendszer fizikailag egy JAR fájlba van csomagolva. A keretrendszer osztályai következő csomag alatt található:
+
+JUnit 3.8-as ill. korábbi verzióiban a junit.framework alatt találhatók
+JUnit 4-es ill. későbbi verzióiban org.junit alatt találhatók
+---IDÉZERT---
+
+\paragraph{}
+Az ILONA rendszer a fejlesztők Java nyelven fejlesztik, ezért az új rendszernek képesnek kellett lennie a Java használatára. 
+Emellett maga a Jenikins CI is egy Java nyelven íródott webalkalmazás ami Java VM-en fut. 
+Így a Safranek virtuális gépre egy legfrissebb Java 
+
+\subsection{MySQL}
+A MySQL egy többfelhasználós, többszálú, SQL-alapú relációs adatbázis-kezelő szerver.
+A MySQL az egyik legelterjedtebb adatbázis-kezelő, aminek egyik oka lehet, hogy a teljesen nyílt forráskódú LAMP (Linux–Apache–MySQL–PHP) összeállítás részeként költséghatékony és egyszerűen beállítható megoldást ad dinamikus webhelyek szolgáltatására.
+
+\paragraph{}
+A tesztrendszer számára egy elengedhetetlen kiegészítőt nyújt olyan tesztelési feladatoknál mikor a program adatbázist használ. 
+Teszteléskor a teszt folyamat feltölti az adatbázist a teszteléshez szükséges adatokkal majd a teszt lefutása (akár sikeres, akár sikertelen) után üríti az adatbázist. 
+
+
+\subsection{Virtualizáció, Hálózat}
+
+\subsection{Jenkins}
+A Jenkins egy nyílt forráskódú, Java nyelven írott eszköz amely folyamatos integrációs szolgáltatást nyújt szoftverfejlesztéshez. 
+Az Oracle Hudson folyamatos integrációs eszközének eredeti fejlesztő csapata vált ki a Hudson fejlesztéséből és valósították meg a Jenkinst. 
+Mivel az eredeti fejlesztőcsapat jelenleg is a Jenkinst fejleszti ezért érdemes (ha a kettő közül kell választanunk) a Jenkinst választani. 
+A Jenkins mellet szóló érv még hogy több plugin érhető el hozzá mint a Hudsonhoz, így több feladatot is egyszerűbben valósítható meg. 
+Ezt az eszköz közvetlenül telepíthetjük a rendszerünkre, viszont választhatjuk hogy egy szervlet konténerben fusson, mint pl. az Apache Tomcat. 
+Támogat számos SCM eszközt mint például a Git-et amely az ILONA projekt számára elengedhetetlen. 
+Ezek mellett az Apache Ant és Apache Maven parancait is végre tudja hajtani, így a Maven továbbra is lehetséges használni az új rendszerben. 
+A Jenkins elsődleges fejlesztője Kohsuke Kawaguchi. A Jenkinst MIT licenc alatt adják ki és szabad szoftver. 
+
+\subsubsection{Folyamatos Integráció}
+
+---IDÉZET---
+A folyamatos integráció egy olyan fejlesztési folyamat, ami hatékonyabbá teszi a csapatmunkában történő fejlesztést azáltal, hogy a fejlesztők gyakran (legalább naponta) és már a kezdetektől összeillesztik (integrálják) a kódjukat. A Continuous Integration arra a felismerésre épít, hogy a fejlesztés során a kódok integrációja a legproblematikusabb fázis és hogyha ezt korán lekezeljük akkor az esetleges problémák is gyorsabban javíthatóak lesznek!
+---IDÉZET---
+
+Maga a Jenkins CI látja egy a különböző elemek közti kapcsolatot, a GutHub hookjaitól egészen a Maven építési és tesztelési folyamat visszajelzéséig. 
+
+\subsection{Nexus}
+
+---IDE MÉG NEM TALÁLTAM SEMMIT, DE MAJD TALÁLOK KI---
