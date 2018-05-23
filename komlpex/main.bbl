@@ -1,8 +1,24 @@
 \begin{thebibliography}{1}
 
-\bibitem{berg2012jenkins}
-Alan Berg.
-\newblock {\em Jenkins Continuous Integration Cookbook}.
-\newblock Packt Publishing Ltd, 2012.
+\bibitem{dockercondata2017}
+Docker-con adatok.
+\newblock
+  \url{https://www.slideshare.net/Docker/dockercon-2017-general-session-day-1-ben-golub}.
+\newblock 2017.
+
+\bibitem{dockerswebpage}
+Docker weboldala.
+\newblock \url{https://www.docker.com/what-docker}.
+
+\bibitem{fowler2006continuous}
+Martin Fowler and Matthew Foemmel.
+\newblock Continuous integration.
+\newblock {\em Thought-Works) http://www. thoughtworks. com/Continuous
+  Integration. pdf}, 122:14, 2006.
+
+\bibitem{gallagher2015mastering}
+Scott Gallagher.
+\newblock {\em Mastering Docker}.
+\newblock Packt Publishing Ltd, 2015.
 
 \end{thebibliography}
