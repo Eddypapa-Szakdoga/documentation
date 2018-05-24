@@ -1,16 +1,36 @@
 \chapter{Implementáció}
 \label{chapImplemetacio}
 
-Install ubuntu server
+%Install ubuntu server
+%Install docker
+%https://docs.docker.com/install/linux/docker-ce/ubuntu/
+%Install docker registry
+%Install docker registry web interface
+%https://hub.docker.com/r/hyper/docker-registry-web/
+%Install Jekins docker
+%https://hub.docker.com/r/jenkins/jenkins/
+%Install Jenkins docker plugin
+%Docker Slaves plugin
+\section{Szerverek}
 
-Install docker
-https://docs.docker.com/install/linux/docker-ce/ubuntu/
+\subsubsection{Safranek}
 
-Install docker registry
-Install docker registry web interface
-https://hub.docker.com/r/hyper/docker-registry-web/
+\paragraph{}
+A feladatok közül a legelső a már meglévő Safranek szerver frissítése és konfigurálása volt. 
+A Safraneken egy Ubuntu server 16.04-es verzió futott, így nem volt szükség sem az operációs rendszer, sem pedig a disztribúció cseréjére, mivel a projektet az Ubuntu szerver ezen verziója tökéletesen kiszolgálja.
+A frissítéseket követően, a Jenkins CI futtatását kellett előkészíteni. 
+Egy jenkins nevű felhasználót kellett létrehozni, hogy szeparáltan lehessen futtatni a programokat és az autentikáció során ne a root felhasználó adatait keljen felhasználni. 
 
-Install Jekins docker
-https://hub.docker.com/r/jenkins/jenkins/
-Install Jenkins docker plugin
-Docker Slaves plugin
+Mivel a TomCat és a Jenkins is egy-egy java alapú alkalmazás ezért a Java JRE és JDK legfrissebb verzióját kellett felkellet telepíteni. 
+Azt a következő két parancs alkalmazásával: 
+
+----"sudo apt-get install default-jre \&\& sudo apt-get install default-jdk"------
+
+
+\paragraph{}
+Az első felhasználó létrehozásához és a komponensek telepítése előtt egy a "/.jenkins/secrets/initialAdminPassword" fájlban található jelszót kell bemásolni a formba a folytatáshoz. 
+Miután ez megtörtént a Jenkins CI admin felülete tárul elénk \ref{fig:clearjenkins}. 
+
+\subparagraph{Jenkins}
+
+A Jenkin CI 
